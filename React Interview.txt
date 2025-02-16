@@ -1,0 +1,45 @@
+Q1.     What is React?
+Ans-1:- React is an efficient, flexible, and open-source JavaScript library that allows developers to create simple, fast, and scalable web applications. Jordan Walke, a software engineer who was working for Facebook created React.
+        React is a JavaScript library used to build user interfaces.
+        It's mainly used for creating websites and apps where reusable components are needed.
+        React's special feature is the virtual DOM, which updates the page efficiently without reloading the whole page.
+        It makes web apps fast and interactive.
+        React is mostly used for building single-page applications.  
+Q2.     What are the limitations of React?
+Ans-2:- JSX Syntax: JSX (JavaScript XML) might seem strange to new developers because it mixes HTML and JavaScript in a single file, which can feel unconventional.
+        Too Many Choices: React ecosystem offers a variety of third-party libraries and tools, which can lead to confusion about which one to choose for certain tasks.
+        Poor Documentation for Advanced Features: While React has good documentation for basics, advanced topics may have less detailed resources, making it harder for developers to learn.
+Q3.     What is useState() in React?
+Ans-3:- Baically,we use usestate for managing state in our component.the benefits of using usestate is whenever the state will be updated,react will re-ender the component on this without reloading the page
+        useState() ek React hook hai jo functional components mein state ko manage karne ke liye use hota hai.
+Q4.     What is JSX?
+
+Ans-4:- While JSX looks like HTML, it is actually JavaScript.The browser does not understand JSX directly, so React converts JSX into JavaScript code. Its advantage is that you can easily combine HTML and JavaScript in one place.
+        JSX (JavaScript XML) is a syntax extension for JavaScript, commonly used with React. It allows you to write HTML-like code directly within JavaScript. JSX makes it easier to define the structure of the UI in React components.
+        const element = <h1>Hello, World!</h1>;
+Q5.     What are the differences between functional and class components?
+
+                               functional                                        class 
+                                                                    |
+     * simpler and are just JavaScript functions that return JSX.   |    * are defined using ES6 class syntax and extend React.Component
+     * use hooks like useState to manage state (in modern React).   |    * manage state using the this.state object and update it with this.setState()
+     * didn’t have lifecycle methods before hooks, but now they     |    * It must have the render() method returning JSX 
+       can use useEffect for similar functionality.                 |    * Constructor is used as it needs to store state. 
+     * No render method used                                        |    * React lifecycle methods can be used inside class components (for example, componentDidMount).
+     * Constructors are not used.                                   |
+                                                                    |
+                                                                    |
+ Q6    What is the use of useEffect React Hooks?
+ Ans-:
+ Q7.   What is the virtual DOM? How does react use the virtual DOM to render the UI?
+ Ans-: The Virtual DOM (vDOM) is a lightweight, in-memory representation of the actual DOM (Document Object Model). It acts as a lightweight copy or representation of the real DOM in the browser. React uses the Virtual DOM to optimize updates and rendering.
+
+       React uses the Virtual DOM:
+
+       Initial Render: React creates a Virtual DOM that matches the actual DOM structure when the component first renders.
+
+       Updating the UI: When there is a change in state or props, React updates the Virtual DOM first, not the real DOM.
+
+       Reconciliation: React then compares the updated Virtual DOM with the previous version (this is called reconciliation). It calculates the differences (or diffs) between the two versions.
+
+       Efficient Update: Only the parts of the real DOM that have changed are updated, based on the differences identified. This minimizes unnecessary re-renders and improves performance.                     
